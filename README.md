@@ -35,5 +35,11 @@ To run the tests and check that everything is working as expected just run
 
 ## CLI Usage
 
+To run this programm you just need to give a string input as parameter
 ```
+npm start <yourinputstring>
 ```
+
+Optional params are:
+1. Char Length: To specify a grid length, default is 3.
+2. LCD Format file path: To specify another file format. Default is "./lcdformat4.txt"
