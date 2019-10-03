@@ -45,6 +45,12 @@ describe('LCD Display', () => {
         lcd.toLCDDisplay('azerty');
       }.should.throw());
     });
+
+    it('Should throw an error', () => {
+      (function () {
+        lcd.toLCDDisplay('123a4');
+      }.should.throw());
+    });
   });
 
   context('Number input', () => {

@@ -67,7 +67,7 @@ module.exports.toLCDDisplay = (input) => {
   if (!input || input.length <= 0) {
     return "";
   }
-  if (!/[0-9]+/g.test(input)) {
+  if (!/^[0-9]+$/g.test(input)) {
     /* Does not match authorized characters */
     throw new Error("Bad input data, only numbers are allowed");
   }
