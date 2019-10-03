@@ -43,7 +43,7 @@ module.exports.initLCDFormat = () => {
     });
   });
   /* Our LCD Format object is built */
-  console.log(characters);
+  console.log('Characters format is ', characters);
 }
 
 module.exports.toLCDDisplay = (input) => {
@@ -73,5 +73,6 @@ module.exports.toLCDDisplay = (input) => {
   }
   console.log("------------- Result IS ----------\n");
   console.log(outputString);
+  console.log("----------------------------------\n");
   return outputString;
 }

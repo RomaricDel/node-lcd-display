@@ -3,7 +3,15 @@ const expect = require('chai').expect;
 const should = require('chai').should();
 
 const lcd = require('./lcd');
-let result910 = ` _     _ \n|_|  || |\n  |  ||_|\n`;
+let result0_9 = ` _     _  _     _  _  _  _  _ 
+| |  | _| _||_||_ |_   ||_||_|
+|_|  ||_  _|  | _||_|  ||_|  |
+`;
+
+let result910 = ` _     _ 
+|_|  || |
+  |  ||_|
+`;
 
 describe('LCD Display', () => {
   before(() => {
@@ -41,7 +49,11 @@ describe('LCD Display', () => {
           lcd.toLCDDisplay('910');
         }.should.not.throw());
       });
-
+      
+      it('Should return result', () => {
+        lcd.toLCDDisplay('0123456789').should.equal(result0_9);
+      });
+      
       it('Should return result', () => {
         lcd.toLCDDisplay('910').should.equal(result910);
       });
