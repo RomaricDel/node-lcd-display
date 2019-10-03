@@ -1,0 +1,29 @@
+{
+  "name": "lcd-display",
+  "version": "1.0.0",
+  "description": "Simple LCD Display using NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomaricDel/node-lcd-display.git"
+  },
+  "keywords": [
+    "LCD",
+    "display",
+    "node"
+  ],
+  "author": "delaunoy.r@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomaricDel/node-lcd-display/issues"
+  },
+  "homepage": "https://github.com/RomaricDel/node-lcd-display#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  }
+}
