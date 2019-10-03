@@ -43,3 +43,7 @@ npm start <yourinputstring>
 Optional params are:
 1. Char Length: To specify a grid length, default is 3.
 2. LCD Format file path: To specify another file format. Default is "./lcdformat4.txt"
+
+```
+npm start <yourinputstring> [charLength] [formatFilePath]
+```

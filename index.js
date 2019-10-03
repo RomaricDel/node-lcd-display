@@ -14,11 +14,11 @@ try {
   const inputString = inputArgs[0];
   let charLength;
   let filePath;
-  if (inputArgs.length >= 2) {
+  if (inputArgs.length >= 2 && !isNaN(inputArgs[1])) {
     /* Second argument is charLength parameter */
     charLength = parseInt(inputArgs[1]);
   }
-  if (inputArgs.length >= 2) {
+  if (inputArgs.length >= 3) {
     /* Third argument is filePath parameter */
     filePath = inputArgs[2];
   }
